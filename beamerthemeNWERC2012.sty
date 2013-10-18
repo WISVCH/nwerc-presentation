@@ -1,0 +1,240 @@
+\ProvidesPackage{beamerthemeNWERC2012}[2012/11/11]
+\usepackage[T1]{fontenc}
+\renewcommand*\familydefault{\sfdefault}
+\definecolor{ICPCBlue}{RGB}{74,139,195}
+\definecolor{ICPCRed}{RGB}{177,42,28}
+\definecolor{ICPCYellow}{RGB}{253,186,49}
+\definecolor{ACMBlue}{RGB}{0,66,117}
+
+\useoutertheme[width=.15\paperwidth]{sidebar}
+\setlength{\beamer@headheight}{.185\paperheight}
+\pgfdeclareimage[width=.30\paperwidth]{nwerc-logo}{nwerc-logo-2012}
+\pgfdeclareimage[width=.13\paperwidth]{nwerc-logo-small}{nwerc-logo-2012}
+\pgfdeclareimage[height=.15\paperheight]{icpc-horizontal}{icpc-hori}
+\pgfdeclareimage[width=.85\paperwidth]{icpc-bg}{icpc-bg}
+\setbeamertemplate{footline}[text line]{%
+%	\insertshortauthor\strut\hfill\insertshorttitle\hfill\insertshortdate\hspace{1em}\insertframenumber/\inserttotalframenumber
+}
+\setbeamertemplate{background canvas}{%
+\begin{pgfpicture}
+  	\pgf@relevantforpicturesizefalse
+	\DoBackground
+	%	\pgftransformxshift{-\Gm@lmargin}
+		 %\pgftransformyshift{5.5pt}
+
+	 \pgfpathrectanglecorners{\pgfpoint{.15\paperwidth}{-.19\paperheight}}{\pgfpoint{\paperwidth}{\paperheight}}
+	 \pgfsetfillcolor{ICPCRed}
+	 \pgfusepath{fill}
+	 
+	 \pgfpathrectanglecorners{\pgfpoint{0pt}{-.19\paperheight}}{\pgfpoint{.15\paperwidth}{\paperheight}}
+	 \pgfsetfillcolor{ICPCBlue}
+	 \pgfusepath{fill}
+	 \pgfpathmoveto{\pgfpoint{.15\paperwidth}{-.19\paperheight}}
+	  
+	 \pgfpathlineto{\pgfpoint{.15\paperwidth}{\paperheight}}
+	 \pgfsetlinewidth{3.5pt}
+	 \pgfsetinnerlinewidth{1pt}
+	 \pgfsetinnerstrokecolor{ICPCYellow}
+	 \pgfsetrectcap
+	 \pgfsetcolor{white}
+	 \pgfusepath{stroke}
+	
+	  \pgfpathmoveto{\pgfpoint{.15\paperwidth}{-.19\paperheight}}
+	  \pgfpathlineto{\pgfpoint{.15\paperwidth}{-\paperheight}}
+	  \pgfsetlinewidth{1pt}
+	  \pgfsetcolor{ICPCYellow}
+	  \pgfusepath{stroke}
+		
+	  \pgftext[at=\pgfpoint{.01\paperwidth}{-.98\paperheight},left,base]{\pgfuseimage{nwerc-logo-small}}%\pgfuseimage{large-corner}}
+%	  \pgftext[at=\pgfpoint{.18\paperwidth}{-\paperheight},left,base]{\pgfuseimage{icpc-bg}}
+\end{pgfpicture}
+}
+\setbeamertemplate{sidebar left}{%
+	\vskip7pt
+	\insertverticalnavigation{\beamer@\sidebarwidth}%
+}
+
+\addtobeamertemplate{title page}{%
+\usebeamertemplate{title background}%
+\vskip .2\paperheight%
+}
+{}
+\newcommand\DoBackground{%
+	\pgfpathmoveto{\pgfpointorigin}
+	\pgfpathrectanglecorners{\pgfpoint{0pt}{0pt}}{\pgfpoint{\paperwidth}{-\paperheight}}
+	\pgfsetfillcolor{white}
+	\pgfusepath{fill}
+}
+\setbeamertemplate{title background}{%
+\begin{pgfpicture}
+	\pgf@relevay30yntforpicturesizefalse
+	\pgftransformxshift{-\Gm@lmargin}
+	\pgftransformyshift{5.5pt}
+	\DoBackground
+	%logo
+	\pgftext[at=\pgfpoint{.02\paperwidth}{-.15\paperheight},left,base]{\pgfuseimage{nwerc-logo}}
+	\pgftext[at=\pgfpoint{.98\paperwidth}{-.98\paperheight},right,base]{\pgfuseimage{icpc-horizontal}}
+	% Purple short bar on left
+	\pgfpathrectanglecorners{\pgfpoint{0pt}{-.19\paperheight}}{\pgfpoint{.15\paperwidth}{-.24\paperheight}}
+	\pgfsetfillcolor{ICPCBlue}
+	\pgfusepath{fill}
+
+	% Followed by orange bar on right
+	\pgfpathrectanglecorners{\pgfpoint{.15\paperwidth}{-.19\paperheight}}{\pgfpoint{\paperwidth}{-.24\paperheight}}
+	\pgfsetfillcolor{ICPCRed}
+	\pgfusepath{fill}
+
+	% A stroke down the middle
+	\pgfpathmoveto{\pgfpoint{.15\paperwidth}{-.19\paperheight}}
+	\pgfpathlineto{\pgfpoint{.15\paperwidth}{-.24\paperheight}}
+	\pgfsetlinewidth{3.5pt}
+	\pgfsetinnerlinewidth{1pt}
+	\pgfsetinnerstrokecolor{ICPCYellow}
+	\pgfsetrectcap
+	\pgfsetcolor{white}
+	\pgfusepath{stroke}
+
+	\pgfpathmoveto{\pgfpoint{.15\paperwidth}{-.28\paperheight}}
+	\pgfpathlineto{\pgfpoint{.15\paperwidth}{-.45\paperheight}}
+	\pgfsetlinewidth{1pt}
+	\pgfsetinnerlinewidth{0pt}
+	\pgfsetcolor{ICPCYellow}
+	\pgfusepath{stroke}
+
+	\pgfpathmoveto{\pgfpoint{.15\paperwidth}{-.55\paperheight}}
+	\pgfpathlineto{\pgfpoint{.15\paperwidth}{-.6\paperheight}}
+	\pgfsetlinewidth{1pt}
+	\pgfsetcolor{ICPCYellow}
+	\pgfusepath{stroke}
+
+	\pgfpathmoveto{\pgfpoint{.15\paperwidth}{-.7\paperheight}}
+	\pgfpathlineto{\pgfpoint{.15\paperwidth}{-.73\paperheight}}
+	\pgfsetlinewidth{1pt}
+	\pgfsetcolor{ACMBlue}
+	\pgfusepath{stroke}
+
+	\pgftext[at=\pgfpoint{.16\paperwidth}{-.72\paperheight},left,base]{\tiny 2012.nwerc.eu}
+
+\end{pgfpicture}
+}
+
+\setbeamertemplate{headline}{
+	\vspace{.20\paperheight}
+	\hspace{.05\paperwidth}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Inner Theme
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\useinnertheme{rectangles}
+\setbeamertemplate{navigation symbols}{}
+
+\setlength{\leftmargini}{.5em}
+\setlength{\leftmarginii}{1.0em}
+\setlength{\leftmarginiii}{1.5em}
+\setlength{\leftmarginiv}{2.0em}
+\setlength{\leftmarginv}{2.5em}
+\setlength{\leftmarginvi}{3.0em}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Colours
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usecolortheme[named=ACMBlue]{structure}
+\usecolortheme{rose}
+%\setbeamercolor{title page}{fg=ACMBlue}
+\setbeamercolor{palette primary}{fg=ACMBlue}
+\setbeamercolor{logo}{bg=ICPCBlue}
+\setbeamercolor{frametitle}{fg=white}
+\setbeamercolor{section in sidebar}{fg=ICPCRed}
+%\setbeamerfont{section in sidebar}{series=\bfseries}
+\setbeamercolor{block title}{bg=ICPCYellow!28!white,fg=ACMBlue}
+\setbeamercolor{block body}{bg=ICPCYellow!15!white, fg=ACMBlue}
+%\setbeamercolor{normal text}{fg=ACMBlue}
+
+\newcommand{\IntroFrame}[3][icpc-horizontal]{%
+	\begin{frame}[plain,t]
+	\begin{pgfpicture}
+	\pgf@relevantforpicturesizefalse
+	\pgftransformxshift{-\Gm@lmargin}
+ 	\pgftransformyshift{5.5pt}
+	\DoBackground
+	%logo
+	\pgftext[at=\pgfpoint{.02\paperwidth}{-.15\paperheight},left,base]{\pgfuseimage{nwerc-logo}}
+	\pgftext[at=\pgfpoint{.98\paperwidth}{-.98\paperheight},right,base]{\pgfuseimage{#1}}
+	% Purple short bar on left
+	\pgfpathrectanglecorners{\pgfpoint{0pt}{-.19\paperheight}}{\pgfpoint{.15\paperwidth}{-.24\paperheight}}
+	\pgfsetfillcolor{ICPCBlue}
+	\pgfusepath{fill}
+
+	% Followed by orange bar on right
+	\pgfpathrectanglecorners{\pgfpoint{.15\paperwidth}{-.19\paperheight}}{\pgfpoint{\paperwidth}{-.24\paperheight}}
+	\pgfsetfillcolor{ICPCRed}
+	\pgfusepath{fill}
+
+	% A stroke down the middle
+	\pgfpathmoveto{\pgfpoint{.15\paperwidth}{-.19\paperheight}}
+	\pgfpathlineto{\pgfpoint{.15\paperwidth}{-.24\paperheight}}
+	\pgfsetlinewidth{3.5pt}
+	\pgfsetinnerlinewidth{1pt}
+	\pgfsetinnerstrokecolor{ICPCYellow}
+	\pgfsetrectcap
+	\pgfsetcolor{white}
+	\pgfusepath{stroke}
+
+	\pgfpathmoveto{\pgfpoint{.15\paperwidth}{-.28\paperheight}}
+	\pgfpathlineto{\pgfpoint{.15\paperwidth}{-.45\paperheight}}
+	\pgfsetlinewidth{1pt}
+	\pgfsetinnerlinewidth{0pt}
+	\pgfsetcolor{ICPCYellow}
+	\pgfusepath{stroke}
+
+	\pgfpathmoveto{\pgfpoint{.15\paperwidth}{-.55\paperheight}}
+	\pgfpathlineto{\pgfpoint{.15\paperwidth}{-.6\paperheight}}
+	\pgfsetlinewidth{1pt}
+	\pgfsetcolor{ICPCYellow}
+	\pgfusepath{stroke}
+
+	\pgfpathmoveto{\pgfpoint{.15\paperwidth}{-.7\paperheight}}
+	\pgfpathlineto{\pgfpoint{.15\paperwidth}{-.73\paperheight}}
+	\pgfsetlinewidth{1pt}
+	\pgfsetcolor{ACMBlue}
+	\pgfusepath{stroke}
+
+	\pgftext[at=\pgfpoint{.16\paperwidth}{-.72\paperheight},left,base]{\tiny 2012.nwerc.eu}
+    %	\pgftext[at=\pgfpoint{.5\paperwidth}{-.4\paperheight},center,base]{\huge #2}
+	%\pgftext[at=\pgfpoint{.5\paperwidth}{-.6\paperheight},center,base]{\large #3}
+\end{pgfpicture}
+	\vskip6em
+	\begin{center}
+		\huge #2\\
+	\end{center}
+	\par
+	\begin{center}
+		\large #3
+
+	\end{center}
+
+	\end{frame}
+}
+\newcommand\QuestionsFrame{
+	\begin{frame}[plain,t]
+	\begin{pgfpicture}
+			\pgf@relevantforpicturesizefalse
+			\pgftransformxshift{-\Gm@lmargin}
+			\pgftransformyshift{5.5pt}
+			\DoBackground
+			\pgftext[at=\pgfpoint{.5\paperwidth}{-.5\paperheight},center,center]{\pgfuseimage{nwerc-logo}}
+			\pgftext[at=\pgfpoint{.5\paperwidth}{-.3\paperheight},center,center]{\huge\structure{Questions?}}
+			\pgftext[at=\pgfpoint{.5\paperwidth}{-.88888888\paperheight},center,center]{\pgfuseimage{icpc-horizontal}}
+		\end{pgfpicture}
+	\end{frame}
+}
+\newcommand{\ProgramFrame}[1]{
+	\begin{frame}[c]
+	\begin{center}
+		\huge #1
+	\end{center}
+	\end{frame}
+}
+
