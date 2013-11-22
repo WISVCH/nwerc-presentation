@@ -176,8 +176,8 @@
 \begin{frame}[fragile]
 \frametitle{General}
 	\begin{itemize}
-		\item Running DOMjudge 3.3.4DEV
-		\item Separate (semi)live online contest (see \url{2012.nwerc.eu})
+		\item Running DOMjudge 3.4.2-NWERC2013
+		\item Separate (semi)live online contest (see \url{2013.nwerc.eu})
 		\item Online scoreboard for actual contest
 		\item IRC channel: \url{irc.ch.tudelft.nl}, \url{#nwerc}
 	\end{itemize}
@@ -220,15 +220,15 @@
 \begin{frame}[fragile]
 	\frametitle{Languages}
 	\begin{itemize}
-		\item 2,5GB memory limit
-		\item 900MB reserved for JVM overhead
+		\item 1,5GB memory limit
+		\item ~300MB reserved for JVM overhead
 		\item C (GCC 4.7.2):\\    \lstinline|gcc -g -Wall -O2 -std=gnu99 -static -pipe -o $DEST "$@" -lm|
 		\item C++:\\  \lstinline|g++ -g -Wall -O2 -std=gnu++98 -static -pipe -o $DEST "$@"|
 		\item C++11:\\\lstinline|g++ -g -Wall -O2 -std=c++11 -static -pipe -o $DEST "$@"|
 		\item Java 7:
 		\begin{itemize}
 			\item Compilation: \lstinline|javac -encoding UTF-8 -d . "$@"|
-			\item Runtime: \lstinline|java -Xrs -Xss8m -Xmx1721440k \$MAINCLASS|
+			\item Runtime: \lstinline|java -Xrs -Xss8m -Xmx1272864k \$MAINCLASS|
 		\end{itemize}
 		\item Aliases available on the system:\\
 		\lstinline|mygcc|, \lstinline|myg++|, \lstinline|myg11|, \lstinline|myjavac| and \lstinline|myjava|.
