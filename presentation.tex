@@ -245,27 +245,28 @@
 \begin{frame}
     \frametitle{Jury: General}
     \begin{itemize}
-        \item We will not provide the number of testcases
-        \item Runtime limits will not be provided
+        \item Runtime limits: up to 15 seconds per test run;\\
+              We do multiple test runs for each submission;\\
+              We do not provide the number of testcases.
         \item If it's on your system, you can use it (Python, Perl, etc.)
-        \item No fooling around, it can lead to disqualification
-        \item No launching of threads/processes
-        \item Javadoc will be available
-        \item Rounding of floating point numbers
+        \item No fooling around, it can lead to disqualification.
+        \item No launching of threads/processes.
+        \item Javadoc will be available.
     \end{itemize}
 \end{frame}
 
 \begin{frame}[fragile]
     \frametitle{Jury: I/O}
 	\begin{itemize}
-		\item Read from \lstinline|stdin|, write to \lstinline|stdout|
+		\item Read from \lstinline|stdin|, write to \lstinline|stdout|.
 		\item The test input \textbf{does not} start with the number of test cases.
 		\item The test input is a concatenation of separate test cases.
 		\item We have some leeway with whitespace matching, but no guarantees. \\
-		  The easiest way to prevent problems is to follow the output specification, and not print extra lines, spaces, etc.
+		  The easiest way to prevent problems is to follow the output specification precisely, and not print extra lines, spaces, etc.
 		\item All output lines should end with a newline.
 		\item There is no \lstinline|PRESENTATION ERROR|.
-		\item Floating point numbers should be printed with the specified number of digits to the right of the decimal point. Include trailing zeros!
+		\item Required accuracy for floating point numbers is specified in the problem.
+		      We check floating point numbers by value, not by string compare.
 	 \end{itemize}
 \end{frame}
 \QuestionsFrame
