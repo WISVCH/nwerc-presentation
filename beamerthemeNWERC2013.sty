@@ -1,4 +1,4 @@
-\ProvidesPackage{beamerthemeNWERC2012}[2012/11/11]
+\ProvidesPackage{beamerthemeNWERC2013}[2013/11/18]
 \usepackage[T1]{fontenc}
 \renewcommand*\familydefault{\sfdefault}
 \definecolor{ICPCBlue}{RGB}{74,139,195}
@@ -8,9 +8,9 @@
 
 \useoutertheme[width=.15\paperwidth]{sidebar}
 \setlength{\beamer@headheight}{.185\paperheight}
-\pgfdeclareimage[width=.30\paperwidth]{nwerc-logo}{nwerc-logo-2012}
-\pgfdeclareimage[width=.13\paperwidth]{nwerc-logo-small}{nwerc-logo-2012}
-\pgfdeclareimage[height=.15\paperheight]{icpc-horizontal}{icpc-hori}
+\pgfdeclareimage[width=.30\paperwidth]{nwerc-logo}{nwerclogo}
+\pgfdeclareimage[width=.13\paperwidth]{nwerc-logo-small}{nwerclogo}
+\pgfdeclareimage[height=.15\paperheight]{icpc-horizontal}{icpc-logo-13}
 \pgfdeclareimage[width=.85\paperwidth]{icpc-bg}{icpc-bg}
 \setbeamertemplate{footline}[text line]{%
 %	\insertshortauthor\strut\hfill\insertshorttitle\hfill\insertshortdate\hspace{1em}\insertframenumber/\inserttotalframenumber
@@ -72,7 +72,7 @@
 	\pgftransformyshift{5.5pt}
 	\DoBackground
 	%logo
-	\pgftext[at=\pgfpoint{.02\paperwidth}{-.15\paperheight},left,base]{\pgfuseimage{nwerc-logo}}
+	\pgftext[at=\pgfpoint{.02\paperwidth}{-.05\paperheight},left,base]{\pgfuseimage{nwerc-logo}}
 	\pgftext[at=\pgfpoint{.98\paperwidth}{-.98\paperheight},right,base]{\pgfuseimage{icpc-horizontal}}
 	% Purple short bar on left
 	\pgfpathrectanglecorners{\pgfpoint{0pt}{-.19\paperheight}}{\pgfpoint{.15\paperwidth}{-.24\paperheight}}
@@ -113,7 +113,7 @@
 	\pgfsetcolor{ACMBlue}
 	\pgfusepath{stroke}
 
-	\pgftext[at=\pgfpoint{.16\paperwidth}{-.72\paperheight},left,base]{\tiny 2012.nwerc.eu}
+	\pgftext[at=\pgfpoint{.16\paperwidth}{-.72\paperheight},left,base]{\tiny 2013.nwerc.eu}
 
 \end{pgfpicture}
 }
@@ -160,7 +160,7 @@
  	\pgftransformyshift{5.5pt}
 	\DoBackground
 	%logo
-	\pgftext[at=\pgfpoint{.02\paperwidth}{-.15\paperheight},left,base]{\pgfuseimage{nwerc-logo}}
+	\pgftext[at=\pgfpoint{.02\paperwidth}{-.17\paperheight},left,base]{\pgfuseimage{nwerc-logo}}
 	\pgftext[at=\pgfpoint{.98\paperwidth}{-.98\paperheight},right,base]{\pgfuseimage{#1}}
 	% Purple short bar on left
 	\pgfpathrectanglecorners{\pgfpoint{0pt}{-.19\paperheight}}{\pgfpoint{.15\paperwidth}{-.24\paperheight}}
@@ -201,7 +201,7 @@
 	\pgfsetcolor{ACMBlue}
 	\pgfusepath{stroke}
 
-	\pgftext[at=\pgfpoint{.16\paperwidth}{-.72\paperheight},left,base]{\tiny 2012.nwerc.eu}
+	\pgftext[at=\pgfpoint{.16\paperwidth}{-.72\paperheight},left,base]{\tiny 2013.nwerc.eu}
     %	\pgftext[at=\pgfpoint{.5\paperwidth}{-.4\paperheight},center,base]{\huge #2}
 	%\pgftext[at=\pgfpoint{.5\paperwidth}{-.6\paperheight},center,base]{\large #3}
 \end{pgfpicture}

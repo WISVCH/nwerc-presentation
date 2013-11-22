@@ -1,5 +1,5 @@
 \documentclass[t]{beamer}
-\usetheme{NWERC2012}
+\usetheme{NWERC2013}
 \usepackage{graphicx}
 \usepackage{eurosym}
 \usepackage{listings}
@@ -7,26 +7,23 @@
 \usepackage{lmodern}
 \lstset{basicstyle=\ttfamily\scriptsize,columns=fullflexible}
 \pgfdeclareimage[width=.30\paperwidth]{tudelft}{tudelft}
-\pgfdeclareimage[width=.30\paperwidth]{foxit}{foxit}
+\pgfdeclareimage[width=.30\paperwidth]{tomtom}{tomtom}
 \pgfdeclareimage[width=.85\paperwidth]{DW}{DW}
 \title{}
-\date{24th of November 2012}
+\date{22nd of November 2013}
 \begin{document}
+\IntroFrame{The 2013 Northwestern Europe Regional Contest}{Welcome in Delft}
 \section{Saturday}
-\IntroFrame{The 2012 Northwestern Europe Regional Contest}{24th of November 2012}
+\IntroFrame{The 2013 Northwestern Europe Regional Contest}{23rd of November 2013}
 \subsection{Opening Ceremony}
-\IntroFrame[tudelft]{Welcome to the\\Delft University of Technology}{Professor Rob Fastenau\\ Dean of the Faculty EEMCS}
 \begin{frame}
 	\frametitle{The goal of the contest}
 	\begin{itemize}
 	\item Solve as many problems in the least amount of time. 
 	\item Balloons 
 	\item Medals 
-	\item World final places in St. Petersburg
-	\item Owls 
-	\item 3rd place: \euro 256,-
-	\item 2nd place: \euro 512,-
-	\item 1st place: \euro 1024,
+	\item World final places in Yekatarinaburg
+ 	\item IBM exclusive goodie bag
 \end{itemize}
 \end{frame}
 \begin{frame}
@@ -36,6 +33,7 @@
 		\item[Yellow badges]{Coaches}
 		\item[Blue badges, blue shirt]{Organisation}
 		\item[Blue badges, orange shirt]{Runners}
+		\item[Blue badges, pink shirt]{Technical Staff}
 		\item[Blue-yellow badges]{Jury}
 	\end{description}
 \end{frame}
@@ -71,14 +69,16 @@
 \begin{frame}
 	\frametitle{General Rules}
 	\begin{itemize}
-		\item No food, drinks or balloons in the lecture hall
+		\item No food or drinks in the contest hall
 		\item No smoking in the building
 		\item Always wear your badge
 		\item Always wear your T-shirt in the contest area
+		\item Watch out with balloons in the Conversation hall and Contest hall
 	\end{itemize}
 \end{frame}
 % \SuccessFrame
-\IntroFrame{The 2012 Northwestern Europe Regional Contest}{Bastiaan Gris\`el}
+\IntroFrame[tudelft]{Welcome to the\\Delft University of Technology}{Peter Kluit\\ Emiratus Professor of the Faculty EEMCS}
+\IntroFrame{The 2013 Northwestern Europe Regional Contest}{Rebecca Jacobs}
 \begin{frame}
 	\frametitle{Schedule}
 	\tableofcontents
@@ -86,7 +86,7 @@
 \begin{frame}[c]
 	\frametitle{The contest site}
 	\begin{pgfpicture}
-		\pgftext[at=\pgfpoint{.15\paperwidth}{-.98\paperheight}, left, base]{\pgfuseimage{DW}}
+		\pgftext[at=\pgfpoint{.1\paperwidth}{-.98\paperheight}, left, base]{\pgfuseimage{DW}}
 	\end{pgfpicture}
 \end{frame}
 \begin{frame}
@@ -97,17 +97,18 @@
 		\item Don't bring bags, jackets, phones or other equipment to the contest area
 		\item Don't bring your own paper, we will provide it
 		\item Your PC will login when the contest starts
+		\item Wear your T-shirt and badge on top
 	\end{itemize}
 	\begin{block}
 		{Bring your TCR to the test session}
-		Leave it at your workplace when the test session is over.
+		Leave it at your workplace when the test session is over.\\
+		Leave your DOMJUdge manual if you want it on paper during the contest.
 	\end{block}
 \end{frame}
 \begin{frame}
 	\frametitle{During the contest}
 	\begin{itemize}
 		\item Prints will be brought to you 
-		\item Coffee will be brought to you 
 		\item If you have a question about the problem set, send a clarification request
 		\item All other questions, ask your runner
 	\end{itemize}
@@ -125,16 +126,14 @@
 	\item Leave your TCR at your workspace
 	\item Take all your other papers, mascots and pens with you
 	\item We will re-image your computers,\\ all settings will be reset to default 
-	\item Lunch will be served downstairs
+	\item Lunch will be served in the conversation hall 
 	\end{itemize}
 \end{frame}
 \begin{frame}
 	\frametitle{Excursions}
 	\begin{description}[l]
 		\item[Beertasting] Meet in Conversation hall
-		\item[Fox-IT Geo hunt] Meet in Lecture hall
-		\item[Royal Delft Experience] Meet outside 
-		\item[Vermeer Centrum] Meet outside 
+		\item[Guided City Tour] Meet outside 
 	\end{description}
 \end{frame}
 %\begin{frame}
@@ -145,19 +144,18 @@
 	\begin{itemize}
 	\item Be on time for the Last Minute remarks at 09:00
 	\item Wear you badge and T-Shirt
-	\item Bring your coffee cup
-	\item Coaches are not allowed upstairs
+	\item Coaches are not allowed in the area around the Contest Hall 
 	\item Lunch will be served at your workspace
 	\end{itemize}
 \end{frame}
 \begin{frame}
 	\frametitle{Coaches on Sunday}
 	\begin{description}
-		\item[10:00] UK Coach Meeting
 		\item[11:00] General Coach Meeting
 		\item[12:30] Nordic Coach Meeting
 		\item[13:00] German Coach Meeting
 		\item[13:30] Benelux Coach Meeting 
+		\item[14:00] UK Coach Meeting
 	\end{description}
 	Problemsets will be available and coaches can compete in the online contest.
 \end{frame}
@@ -243,50 +241,10 @@
 		\item If not possible: ask your nearest runner!
 	\end{itemize}
 \end{frame}
-
-\QuestionsFrame
-\subsection{Test Session}
-%\ProgramFrame{Test Session}
-\begin{frame}
-	\frametitle{Test Session}
-	\begin{itemize}
-		\item Find your designated workspace
-		\item Do not touch the computer hardware and problemset
-		\item Do not bring bags, jackets, phones or other equipment to the contest area
-		\item Your PC will log in when the contest starts
-		\item Leave your TCR at your workspace after the testsession
-		\item Take all your other papers, mascots and pens with you
-	\end{itemize}
-\end{frame}
-\subsection{Lunch}
-\ProgramFrame{Lunch}
-\subsection{Excursions}
-\begin{frame}
-	\frametitle{Excursions}
-	\begin{description}[l]
-		\item[Beertasting] Meet in Conversation hall
-		\item[Fox-IT Geo hunt] Meet in Lecture hall
-		\item[Royal Delft Experience] Meet outside 
-		\item[Vermeer Centrum] Meet outside 
-	\end{description}
-\end{frame}
-\subsection{Q\&A Test Session}
-\IntroFrame{Q\&A Test Session}{}
-
-\begin{frame}
-	\frametitle{Contents}
-		\begin{itemize}
-		\item Jury
-		\item System
-		\item Organization
-	\end{itemize}
-\end{frame}
-
+\IntroFrame{Jury}{Herman Banken}
 \begin{frame}
     \frametitle{Jury: General}
     \begin{itemize}
-        \item Output checker problem
-        \item Striked-through solutions
         \item We will not provide the number of testcases
         \item Runtime limits will not be provided
         \item If it's on your system, you can use it (Python, Perl, etc.)
@@ -310,6 +268,44 @@
 		\item Floating point numbers should be printed with the specified number of digits to the right of the decimal point. Include trailing zeros!
 	 \end{itemize}
 \end{frame}
+\QuestionsFrame
+\subsection{Test Session}
+%\ProgramFrame{Test Session}
+\begin{frame}
+	\frametitle{Test Session}
+	\begin{itemize}
+		\item Find your designated workspace
+		\item Do not touch the computer hardware and problemset
+		\item Do not bring bags, jackets, phones or other equipment to the contest area
+		\item Your PC will log in when the contest starts
+		\item Leave your TCR at your workspace after the testsession
+		\item Take all your other papers, mascots and pens with you
+	\end{itemize}
+\end{frame}
+\subsection{Lunch}
+\ProgramFrame{Lunch}
+\subsection{Excursions}
+\begin{frame}
+	\frametitle{Excursions}
+	\begin{description}[l]
+		\item[Beertasting] Meet in Conversation hall
+		\item[Guided City Tour] Meet outside 
+	\end{description}
+\end{frame}
+\subsection{Talk by TomTom}
+\IntroFrame[tomtom]{TomTom Talk}{Speaker name}
+\subsection{Q\&A Test Session}
+\IntroFrame{Q\&A Test Session}{}
+
+\begin{frame}
+	\frametitle{Contents}
+		\begin{itemize}
+		\item Jury
+		\item System
+		\item Organization
+	\end{itemize}
+\end{frame}
+
 
 \begin{frame}
     \frametitle{Jury: Staplers}
@@ -343,8 +339,6 @@
 \end{frame}
 
 \QuestionsFrame
-\subsection{Talk Fox-IT}
-\IntroFrame[foxit]{''Can you stop on-line bank robbers with Bayesian Prediction?''}{Eward Driehuis, Productmanager Cybercrime}
 \subsection{Dinner}
 \ProgramFrame{Dinner}
 \section{Sunday}
